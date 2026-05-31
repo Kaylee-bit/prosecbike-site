@@ -1,0 +1,1410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Prosec Technology Co., Ltd. is a leading B2B manufacturer of smart bike accessories, including GPS trackers, 113dB anti-theft alarms, and smart brake tail lights. 18 years of OEM/ODM experience.">
+    <meta name="keywords" content="Bike GPS Tracker Wholesale, Anti-theft Bike Alarm Manufacturer, Smart Bike Accessories Supplier, OEM ODM Bicycle Safety Gear">
+    <title>Prosec Technology | Wholesale Bike GPS Trackers & Anti-theft Alarms</title>
+    <style>
+        :root {
+            --primary-color: #ffcf00; /* Vibrant Tech Yellow */
+            --secondary-color: #252525;
+            --accent-color: #00ff88; /* Tech Green */
+            --text-light: #ffffff;
+            --text-dark: #333333;
+            --bg-dark: #1e1e1e; /* Lightened from #0f0f0f */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Header & Navigation */
+        header {
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+            backdrop-filter: blur(5px);
+            border-bottom: none;
+            transition: all 0.3s;
+        }
+
+        header.scrolled {
+            background: rgba(15, 15, 15, 0.95);
+            padding: 10px 50px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--text-light);
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: #000; /* Dark text for better contrast on yellow */
+            padding: 15px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 5px 15px rgba(255, 207, 0, 0.3);
+            text-align: center;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            background-color: #ffe066;
+            box-shadow: 0 8px 20px rgba(255, 207, 0, 0.5);
+        }
+
+        .hero-btn {
+            font-size: 20px;
+            padding: 20px 60px;
+            background-color: var(--primary-color);
+            box-shadow: 0 0 30px rgba(255, 207, 0, 0.6);
+            border: 2px solid rgba(0,0,0,0.1);
+            animation: pulse-glow 2s infinite;
+        }
+
+        @keyframes pulse-glow {
+            0% { box-shadow: 0 0 0 0 rgba(255, 207, 0, 0.8); }
+            70% { box-shadow: 0 0 0 20px rgba(255, 207, 0, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 207, 0, 0); }
+        }
+
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            background-color: #ff8533;
+            box-shadow: 0 8px 20px rgba(255, 107, 0, 0.5);
+        }
+
+        .hero-btn {
+            font-size: 20px;
+            padding: 20px 60px;
+            background-color: var(--primary-color);
+            box-shadow: 0 0 30px rgba(255, 107, 0, 0.6);
+            border: 2px solid rgba(255,255,255,0.3);
+            animation: pulse-orange 2s infinite;
+        }
+
+        @keyframes pulse-orange {
+            0% { transform: translateX(-50%) scale(1); box-shadow: 0 0 0 0 rgba(255, 107, 0, 0.7); }
+            70% { transform: translateX(-50%) scale(1.05); box-shadow: 0 0 0 20px rgba(255, 107, 0, 0); }
+            100% { transform: translateX(-50%) scale(1); box-shadow: 0 0 0 0 rgba(255, 107, 0, 0); }
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            width: 100%;
+            background: #000;
+            overflow: hidden;
+        }
+
+        .hero-img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .hero-content {
+            position: absolute;
+            bottom: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            width: auto;
+            text-align: center;
+        }
+
+        .hero-btn {
+            font-size: 20px;
+            padding: 20px 60px;
+            background-color: var(--primary-color);
+            box-shadow: 0 0 30px rgba(255, 107, 0, 0.6);
+            border: 2px solid rgba(255,255,255,0.3);
+            animation: pulse-glow 2s infinite;
+        }
+
+        @keyframes pulse-glow {
+            0% { box-shadow: 0 0 0 0 rgba(255, 107, 0, 0.8); }
+            70% { box-shadow: 0 0 0 20px rgba(255, 107, 0, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 107, 0, 0); }
+        }
+
+
+        /* Flagship Product Section */
+        .flagship {
+            padding: 100px 50px;
+            background: var(--secondary-color);
+            display: flex;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .flagship-img {
+            flex: 1.2;
+            text-align: center;
+            position: relative;
+        }
+
+        .flagship-img img {
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 0 50px rgba(0,255,136,0.1);
+            transition: transform 0.5s;
+        }
+
+        .flagship-info {
+            flex: 1;
+        }
+
+        .flagship-info h2 {
+            font-size: 3.5rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+
+        .tag-row {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background: rgba(0, 255, 136, 0.1);
+            color: var(--accent-color);
+            padding: 6px 15px;
+            border-radius: 5px;
+            font-size: 13px;
+            font-weight: bold;
+            border: 1px solid var(--accent-color);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .feat-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 16px;
+        }
+
+        .feat-item i {
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        /* Specs Table */
+        .specs-container {
+            margin-top: 50px;
+            background: #222;
+            padding: 30px;
+            border-radius: 15px;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .specs-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+
+        .specs-table tr {
+            border-bottom: 1px solid #333;
+        }
+
+        .specs-table td {
+            padding: 12px 0;
+        }
+
+        .specs-table td:first-child {
+            color: #888;
+            width: 40%;
+            font-weight: 500;
+        }
+
+        .specs-table td:last-child {
+            color: #fff;
+            font-weight: bold;
+        }
+
+        /* Feature Highlights (Icons/Images) */
+        .highlights {
+            padding: 60px 50px;
+            background: var(--bg-dark);
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            text-align: center;
+        }
+
+        .high-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .high-item img {
+            max-width: 320px; /* Reduced size */
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #333;
+            transition: transform 0.3s;
+        }
+
+        .high-item img:hover {
+            transform: scale(1.05);
+        }
+
+        .high-item h4 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .high-item p {
+            font-size: 14px;
+            color: #888;
+        }
+
+        /* Product Grid */
+        .products {
+            padding: 100px 50px;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background: #1a1a1a;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary-color);
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .product-card h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .product-card p {
+            font-size: 14px;
+            color: #999;
+            margin-bottom: 20px;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 100px 50px;
+            background: linear-gradient(rgba(26,26,26,0.9), rgba(26,26,26,0.9)), url('https://images.unsplash.com/photo-1485965120184-e220f721d03e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact-form {
+            width: 100%;
+            max-width: 600px;
+            background: #222;
+            padding: 40px;
+            border-radius: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            background: #333;
+            border: 1px solid #444;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .form-group input:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        /* Footer */
+        footer {
+            padding: 50px;
+            text-align: center;
+            background: #000;
+            border-top: 1px solid #222;
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.9);
+            overflow-y: auto;
+        }
+
+        /* About Section */
+        .about {
+            padding: 100px 50px;
+            background: var(--bg-dark);
+            display: flex;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-text h2 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 25px;
+        }
+
+        .about-text p {
+            margin-bottom: 20px;
+            color: #ccc;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .about-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .stat-box {
+            background: var(--secondary-color);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            border: 1px solid rgba(255, 207, 0, 0.1);
+        }
+
+        .stat-number {
+            display: block;
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            font-size: 12px;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .about-image {
+            flex: 1;
+            position: relative;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 0 40px rgba(0,0,0,0.5);
+            border: 1px solid #333;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 100px 50px;
+            background: var(--bg-dark);
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .service-item {
+            background: #1a1a1a;
+            padding: 40px 30px;
+            border-radius: 20px;
+            text-align: center;
+            border: 1px solid rgba(255, 207, 0, 0.1);
+            transition: all 0.3s;
+        }
+
+        .service-item:hover {
+            border-color: var(--primary-color);
+            background: #222;
+            transform: translateY(-5px);
+        }
+
+        .service-icon {
+            font-size: 40px;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .service-item h4 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 100px 50px;
+            background: var(--secondary-color);
+        }
+
+        .faq-container {
+            max-width: 900px;
+            margin: 50px auto 0;
+        }
+
+        .faq-item {
+            margin-bottom: 15px;
+            background: var(--bg-dark);
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 207, 0, 0.1);
+            transition: all 0.3s;
+        }
+
+        .faq-item:hover {
+            border-color: var(--primary-color);
+        }
+
+        .faq-question {
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 24px;
+            transition: transform 0.3s;
+        }
+
+        .faq-item.active .faq-question::after {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            padding: 0 30px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease-out;
+            color: #ccc;
+            font-size: 15px;
+            line-height: 1.8;
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 0 30px 30px;
+            max-height: 300px;
+        }
+
+        .faq-answer b {
+            color: var(--text-light);
+        }
+
+        /* Certification Section */
+        .certifications {
+            padding: 60px 50px;
+            background: var(--secondary-color);
+            text-align: center;
+            border-top: 1px solid #222;
+        }
+
+        .cert-grid {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .cert-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 120px;
+        }
+
+        .cert-badge {
+            width: 80px;
+            height: 80px;
+            border: 2px solid var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 20px;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            background: rgba(255, 207, 0, 0.05);
+        }
+
+        .cert-item span {
+            font-size: 14px;
+            color: #888;
+            font-weight: 500;
+        }
+
+        .modal-content {
+            background-color: #1a1a1a;
+            margin: 5% auto;
+            padding: 40px;
+            border: 1px solid var(--primary-color);
+            width: 80%;
+            max-width: 900px;
+            border-radius: 20px;
+            position: relative;
+        }
+
+        .close-modal {
+            position: absolute;
+            right: 25px;
+            top: 20px;
+            font-size: 35px;
+            font-weight: bold;
+            color: #888;
+            cursor: pointer;
+        }
+
+        .modal-body {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+        }
+
+        .modal-body img {
+            flex: 1;
+            max-width: 45%;
+            border-radius: 10px;
+        }
+
+        .modal-desc {
+            flex: 1;
+        }
+
+        .modal-desc h3 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .modal-desc p {
+            margin-bottom: 20px;
+            color: #ccc;
+        }
+
+        .modal-desc .spec-group {
+            margin-bottom: 15px;
+        }
+
+        .modal-desc .spec-label {
+            color: var(--accent-color);
+            font-weight: bold;
+            display: block;
+            font-size: 14px;
+        }
+
+        /* WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: transform 0.3s;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            background-color: #128c7e;
+        }
+
+        .whatsapp-float img {
+            width: 35px;
+            height: 35px;
+        }
+
+        @media (max-width: 768px) {
+            header { padding: 20px; }
+            nav { display: none; }
+            .hero-content h1 { font-size: 2.5rem; }
+            .flagship { flex-direction: column; padding: 50px 20px; }
+            .flagship-info h2 { font-size: 2rem; }
+            .products { padding: 50px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">PROSECTECH</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#flagship">GPS Tracker</a></li>
+                <li><a href="#alarm-flagship">Bike Alarm</a></li>
+                <li><a href="#other-accessories">Accessories</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#certifications">Certs</a></li>
+                <li><a href="#contact">Inquiry</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <img src="https://sc01.alicdn.com/kf/Hed629e2e86d84ba78e34c9384ea03412p.png" class="hero-img" alt="Anti-theft Bike Security">
+        <div class="hero-content">
+            <a href="#contact" class="btn-primary hero-btn">Get Wholesale Quote</a>
+        </div>
+    </section>
+
+    <section class="flagship" id="flagship">
+        <div class="flagship-img">
+            <img src="https://sc01.alicdn.com/kf/Hca41bcd8bf674271b8eb6952c9596a1dE.png" alt="Smart GPS Tracker">
+        </div>
+        <div class="flagship-info">
+            <div class="tag-row">
+                <span class="tag">CERTIFIED BY APPLE & GOOGLE</span>
+                <span class="tag">CE / FCC / ROHS</span>
+                <span class="tag">IP65 WATERPROOF</span>
+            </div>
+            <h2>Smart Tag Dual System <br>Item Finder</h2>
+            <p>The ultimate defense against theft. This compact tracker works seamlessly with both <b>Apple Find My</b> and <b>Android Find Hub</b> networks, leveraging billions of devices worldwide to pinpoint your bike's location.</p>
+            
+            <div class="features-grid">
+                <div class="feat-item"><i>✓</i> Dual Ecosystem (iOS & Android)</div>
+                <div class="feat-item"><i>✓</i> No Monthly Subscription</div>
+                <div class="feat-item"><i>✓</i> 18-24 Months Battery Life</div>
+                <div class="feat-item"><i>✓</i> Replaceable CR2032 Battery</div>
+                <div class="feat-item"><i>✓</i> Play Sound for Nearby Finding</div>
+                <div class="feat-item"><i>✓</i> OEM/ODM Support (Logo & Package)</div>
+            </div>
+
+            <div class="specs-container">
+                <h4 style="margin-bottom: 15px; color: var(--accent-color);">Technical Specifications</h4>
+                <table class="specs-table">
+                    <tr><td>Dimensions</td><td>39 mm (Diameter) × 16 mm (H)</td></tr>
+                    <tr><td>Connectivity</td><td>BLE (Bluetooth Low Energy)</td></tr>
+                    <tr><td>Installation</td><td>2-in-1 (Magnet + Zip-Tie)</td></tr>
+                    <tr><td>Compatibility</td><td>iOS 14.5+ / Android 9.0+</td></tr>
+                    <tr><td>Protection</td><td>IP65 Rain & Splash Proof</td></tr>
+                </table>
+                <br>
+                <button class="btn-primary" id="openDetail" style="padding: 10px 25px; font-size: 14px;">View Full Data Sheet</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Product Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <img src="https://sc01.alicdn.com/kf/H007777f71885408d99545e1c42afad3cE.png" alt="Exploded View">
+                <div class="modal-desc">
+                    <h3>Smart GPS Tracker - B2B Technical Data</h3>
+                    <p>Designed for high-performance asset tracking, this device combines the widespread network of Apple and Google to ensure zero dead zones.</p>
+                    
+                    <div class="spec-group">
+                        <span class="spec-label">Network Ecosystem</span>
+                        <p>Certified by Apple Find My (MFi) and Android Find Hub. Works natively without third-party app installations in many cases.</p>
+                    </div>
+
+                    <div class="spec-group">
+                        <span class="spec-label">Battery & Power</span>
+                        <p>CR2032 Replaceable Battery. Ultra-low BLE power draw (under 5μA standby). Low-battery APP alert push notification included.</p>
+                    </div>
+
+                    <div class="spec-group">
+                        <span class="spec-label">Material & Durability</span>
+                        <p>High-strength ABS Protective Shell + PC Inner Frame. Internal Sponge Pad for vibration absorption. IP65 Rated for all-weather riding.</p>
+                    </div>
+
+                    <div class="spec-group">
+                        <span class="spec-label">Mounting Hardware</span>
+                        <p>Integrated Strong Neodymium Magnet + Dual Zip-Tie slots. Supports mounting on bikes, scooters, cars, and even pets.</p>
+                    </div>
+
+                    <a href="#contact" class="btn-primary" style="margin-top: 10px;" onclick="closeModal()">Bulk Order Inquiry</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Detailed Alarm Modal -->
+    <div id="alarmModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeAlarm">&times;</span>
+            <div class="modal-body">
+                <img src="https://sc01.alicdn.com/kf/Hd481ac9544e347d89b4f88fa66a2ca7bj.png" alt="Technical Specifications & Package Content">
+                <div class="modal-desc">
+                    <h3>Anti-theft Bike Alarm - Technical Details</h3>
+                    <p>Professional grade vibration-triggered alarm system. Comprehensive package includes everything needed for quick deployment.</p>
+                    
+                    <div class="spec-group">
+                        <span class="spec-label">Dimensions & Build</span>
+                        <p>Compact main unit (65mm x 30mm) designed for stealthy mounting. High-impact PC material with UV resistance.</p>
+                    </div>
+
+                    <div class="spec-group">
+                        <span class="spec-label">Package Content</span>
+                        <p>Complete set: 1x Alarm, 1x Remote, Cable ties (250mm), Double-sided sticker (46x30mm), opening tool, and English user manual.</p>
+                    </div>
+
+                    <div class="spec-group">
+                        <span class="spec-label">Customizable Alert</span>
+                        <p>Adjustable volume from 96dB to 113dB. 7 levels of touch sensitivity from gentle touch to push/beat.</p>
+                    </div>
+
+                    <div class="spec-group">
+                        <span class="spec-label">Installation & Range</span>
+                        <p>Wireless remote range up to 66ft (20m). Easy 2-way installation via double-sided sticker or cable ties.</p>
+                    </div>
+
+                    <div class="spec-group">
+                        <span class="spec-label">Rugged Design</span>
+                        <p>IP65 Waterproof rating allows for all-weather use. Long-life power supply for extended security periods.</p>
+                    </div>
+
+                    <a href="#contact" class="btn-primary" style="margin-top: 10px;" onclick="closeAllModals()">Bulk Order Inquiry</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="highlights">
+        <div class="section-header" style="grid-column: 1 / -1; margin-bottom: 40px;">
+            <h2 style="font-size: 2rem; color: var(--primary-color);">Smart GPS Tracker Key Features</h2>
+        </div>
+        <div class="high-item">
+            <img src="https://sc01.alicdn.com/kf/Hf90bdc17356e4113a85d9e123fa9de6e3.png" alt="Dual Ecosystem">
+            <h4>One Tracker. Two Worlds.</h4>
+            <p>Seamlessly works with both Apple Find My & Android Find Hub networks for maximum coverage.</p>
+        </div>
+        <div class="high-item">
+            <img src="https://sc01.alicdn.com/kf/H0fc694ff41f440608f04ad96fc028b0aF.png" alt="No Fees">
+            <h4>Zero Monthly Fees</h4>
+            <p>Buy once, use forever. No SIM card required, no subscriptions, and no hidden costs.</p>
+        </div>
+        <div class="high-item">
+            <img src="https://sc01.alicdn.com/kf/Hdce115cd2df04bc9b43a99e0b8585da3v.png" alt="Battery Life">
+            <h4>24-Month Battery Life</h4>
+            <p>Ultra-low power tech. Up to 18 months on iOS and 24 months on Android with a replaceable battery.</p>
+        </div>
+        <div class="high-item">
+            <img src="https://sc01.alicdn.com/kf/H47088ed736364304b1eaaf5fffbbcdebI.png" alt="Weatherproof">
+            <h4>Built for Any Weather</h4>
+            <p>IP65 Waterproof rating. Rain, mud, and puddles are no problem for this rugged security device.</p>
+        </div>
+        <div class="high-item">
+            <img src="https://sc01.alicdn.com/kf/H51ac1c5c03c446ee8b4d05d3076faf01r.png" alt="Real-time Tracking">
+            <h4>Find It Anywhere, Anytime</h4>
+            <p>Track instantly with real-time location, history routes, and left-behind alerts worldwide.</p>
+        </div>
+        <div class="high-item">
+            <img src="https://sc01.alicdn.com/kf/Hd21ca2306ef642a2933b989b2092babeR.png" alt="Installation">
+            <h4>Easy to Install</h4>
+            <p>Strong magnetic mount + secure zip-ties included. Fits any frame and is easy to hide.</p>
+        </div>
+    </section>
+
+    <section class="flagship" id="alarm-flagship" style="background: var(--bg-dark); border-top: 1px solid #333;">
+        <div class="flagship-info">
+            <div class="tag-row">
+                <span class="tag">CE / FCC / ROHS</span>
+                <span class="tag">113dB ULTRA LOUD</span>
+                <span class="tag">SOS TILT SENSOR</span>
+            </div>
+            <h2>Professional Anti-theft <br>Bike Alarm</h2>
+            <p>Maximum security for your vehicle. This vibration-triggered alarm features a massive 113dB siren and an intelligent SOS emergency tilt sensor to protect you and your bike on every ride.</p>
+            
+            <div class="features-grid">
+                <div class="feat-item"><i>✓</i> 7-Level Adjustable Sensitivity</div>
+                <div class="feat-item"><i>✓</i> 3-Level Adjustable Volume</div>
+                <div class="feat-item"><i>✓</i> SOS Emergency Assistance</div>
+                <div class="feat-item"><i>✓</i> 66ft (20m) Wireless Range</div>
+                <div class="feat-item"><i>✓</i> Easy 2-Way Installation</div>
+                <div class="feat-item"><i>✓</i> 1-2 Year Battery Life</div>
+            </div>
+
+            <div class="specs-container" style="background: #1a1a1a;">
+                <h4 style="margin-bottom: 15px; color: var(--accent-color);">Technical Specifications</h4>
+                <table class="specs-table">
+                    <tr><td>Siren Volume</td><td>96dB - 113dB (Adjustable)</td></tr>
+                    <tr><td>Battery Type</td><td>3×AAA (Alarm), 12V/27A (Remote)</td></tr>
+                    <tr><td>Frequency</td><td>433.92 MHz Wireless Control</td></tr>
+                    <tr><td>Operating Temp</td><td>-20°C to 60°C</td></tr>
+                    <tr><td>Material</td><td>High-Impact PC + UV Resistant</td></tr>
+                </table>
+                <br>
+                <button class="btn-primary" id="openAlarmDetail" style="padding: 10px 25px; font-size: 14px;">View Technical Data</button>
+            </div>
+        </div>
+        <div class="flagship-img">
+            <img src="https://sc01.alicdn.com/kf/H307566c846484c889da81bc818a1271aI.png" alt="Anti-theft bike alarm">
+        </div>
+    </section>
+
+    <section class="highlights" style="background: var(--secondary-color); border-top: 1px solid #333;">
+        <div class="section-header" style="grid-column: 1 / -1; margin-bottom: 40px;">
+            <h2 style="font-size: 2rem; color: var(--primary-color);">Anti-theft Bike Alarm Highlights</h2>
+        </div>
+        <div class="high-item">
+            <img src="https://sc01.alicdn.com/kf/Hbef448b667b941a289fa52ad852fc059a.png" alt="113dB Loud Alarm">
+            <h4>113dB Ultra Loud Alarm</h4>
+            <p>Powerful enough to scare away any potential thieves instantly with its massive siren.</p>
+        </div>
+        <div class="high-item">
+            <img src="https://sc01.alicdn.com/kf/He37713c8c61c494693cb15d344678ff3e.png" alt="Adjustable Sensitivity">
+            <h4>Adjustable Tone & Sensitivity</h4>
+            <p>7 sensitivity levels and 3 volume levels (up to 113dB) tailored to your specific needs.</p>
+        </div>
+        <div class="high-item">
+            <img src="https://sc01.alicdn.com/kf/He183b92fefac4baf89382be29ac0264az.png" alt="Flexible Installation">
+            <h4>Flexible Installation</h4>
+            <p>Easy mounting with stickers or zip-ties under the seat, on the frame, or inside a bike bag.</p>
+        </div>
+        <div class="high-item">
+            <img src="https://sc01.alicdn.com/kf/Hc1cf851e1ee44d83a039e2eb3c14c6b8r.png" alt="Remote Range">
+            <h4>66FT Remote Control</h4>
+            <p>Complete wireless control to arm, disarm, or find your vehicle even in a crowded parking lot.</p>
+        </div>
+        <div class="high-item">
+            <img src="https://sc01.alicdn.com/kf/H4cc81a9de30f4addb0933414d5dec578V.png" alt="IP65 Waterproof">
+            <h4>IP65 All-Weather Proof</h4>
+            <p>Rugged and reliable. Works flawlessly in rain, dust, mud, and extreme outdoor conditions.</p>
+        </div>
+        <div class="high-item">
+            <img src="https://sc01.alicdn.com/kf/H24ad50baf5c3479a80dc4b17c6eb8e75V.png" alt="SOS Function">
+            <h4>SOS Emergency Function</h4>
+            <p>Built-in 45° tilt sensor triggers an automatic alarm for help in case of an accident.</p>
+        </div>
+    </section>
+
+    <section class="products" id="other-accessories" style="background: var(--bg-dark);">
+        <div class="section-header">
+            <h2>Other Bike Accessories</h2>
+            <p>Complete your cycling setup with our premium safety gear.</p>
+        </div>
+        <div class="product-grid">
+            <!-- Smart Tail Light -->
+            <div class="product-card">
+                <img src="https://sc01.alicdn.com/kf/H4adc894d671d497cba03003403e2a3e3e.png" alt="Smart Tail Light">
+                <h3>Smart Brake Tail Light</h3>
+                <p><b>115dB Alarm + Brake Sensing.</b> Wireless remote control and IP65 waterproof protection.</p>
+                <button class="btn-primary" id="openTailLightDetail" style="padding: 8px 20px; font-size: 13px; margin-bottom: 15px;">Technical Details</button>
+                <br>
+                <a href="#contact" style="color: var(--primary-color); text-decoration: none; font-weight: bold;">Inquire Now</a>
+            </div>
+
+            <!-- Disc Brake Lock -->
+            <div class="product-card">
+                <img src="https://sc01.alicdn.com/kf/Hbe400063006345bea41c4e50965e8bb6d.png" alt="Disc Brake Lock">
+                <h3>Alloy Disc Brake Lock</h3>
+                <p><b>110dB Alarm + Mechanical Lock.</b> High-strength alloy, IP65 waterproof, and keyless one-press locking.</p>
+                <button class="btn-primary" id="openLockDetail" style="padding: 8px 20px; font-size: 13px; margin-bottom: 15px;">Technical Details</button>
+                <br>
+                <a href="#contact" style="color: var(--primary-color); text-decoration: none; font-weight: bold;">Inquire Now</a>
+            </div>
+            <!-- Portable Pump -->
+            <div class="product-card">
+                <img src="https://sc01.alicdn.com/kf/Hbecf33a61d6b46ea885711afd93766d25.png" alt="Portable Pump">
+                <h3>150PSI Mini Air Pump</h3>
+                <p><b>150PSI High Pressure.</b> 15L/min airflow, smart digital display, and ultra-compact pocket design.</p>
+                <button class="btn-primary" id="openPumpDetail" style="padding: 8px 20px; font-size: 13px; margin-bottom: 15px;">Technical Details</button>
+                <br>
+                <a href="#contact" style="color: var(--primary-color); text-decoration: none; font-weight: bold;">Inquire Now</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-text">
+            <h2>About Prosec Technology</h2>
+            <p>Founded in 2008, <b>Shenzhen Prosec Technology Co., Ltd.</b> is a high-tech leader specializing in the R&D, production, and global distribution of professional bicycle accessories. Our core expertise spans smart GPS trackers, anti-theft alarms, and high-performance safety gear.</p>
+            <p>Under our flagship brand <b>PROSEC</b>, we maintain advanced production and precise QC lines. From industrial design to final stress testing, we uphold rigorous standards to ensure every product meets the highest quality benchmarks for global markets.</p>
+            <p>With <b>18 years of industry experience</b>, we provide our partners with competitive OEM/ODM solutions, reliable quality, and rapid delivery. We launch at least 3 new models annually to stay ahead of market trends and fulfill evolving customer requirements.</p>
+            
+            <div class="about-stats">
+                <div class="stat-box">
+                    <span class="stat-number">18+</span>
+                    <span class="stat-label">Years Exp</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">100+</span>
+                    <span class="stat-label">Countries</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">3+</span>
+                    <span class="stat-label">New Models/Yr</span>
+                </div>
+            </div>
+        </div>
+        <div class="about-image">
+            <img src="https://sc01.alicdn.com/kf/Hb411a5870f354a30a605cfebda4f7aaef.png" alt="Prosec Technology Workshop and Equipment">
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="section-header">
+            <h2>Professional OEM & ODM Services</h2>
+            <p>From Concept to Shelf - Your Trusted Manufacturing Partner.</p>
+        </div>
+        <div class="service-grid">
+            <div class="service-item">
+                <span class="service-icon">🏷️</span>
+                <h4>Custom Logo Printing</h4>
+                <p>Build your brand identity with precision. We support silk-screen, laser etching, and high-quality pad printing on all product housings.</p>
+            </div>
+            <div class="service-item">
+                <span class="service-icon">📦</span>
+                <h4>Packaging & Manuals</h4>
+                <p>Full customization of retail packaging, including color boxes and blister packs. We also design multi-language instruction manuals to suit your market.</p>
+            </div>
+            <div class="service-item">
+                <span class="service-icon">📐</span>
+                <h4>Appearance Customization</h4>
+                <p>Stand out from the competition. Our engineering team supports custom mold development for unique product designs and appearances.</p>
+            </div>
+            <div class="service-item">
+                <span class="service-icon">🛠️</span>
+                <h4>Full ODM Solutions</h4>
+                <p>Go beyond the surface. We provide end-to-end ODM services including PCB optimization, firmware adjustment, and feature integration.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="certifications" id="certifications">
+        <div class="section-header" style="margin-bottom: 30px;">
+            <h2 style="font-size: 2rem;">International Standard Compliance</h2>
+            <p>Our products are tested and certified for global market entry.</p>
+        </div>
+        <div class="cert-grid">
+            <div class="cert-item">
+                <div class="cert-badge">CE</div>
+                <span>European Conformity</span>
+            </div>
+            <div class="cert-item">
+                <div class="cert-badge">FCC</div>
+                <span>Federal Communications</span>
+            </div>
+            <div class="cert-item">
+                <div class="cert-badge">RoHS</div>
+                <span>Hazardous Substances</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section" id="faq">
+        <div class="section-header">
+            <h2>Wholesale FAQ</h2>
+            <p>Common questions from our global distributors and partners.</p>
+        </div>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">What is your Minimum Order Quantity (MOQ)?</div>
+                <div class="faq-answer">
+                    <p><b>Standard Products:</b> We support small trial orders starting from <b>10-50 units</b> to help you test your local market.<br>
+                    <b>Customized Orders:</b> For Logo printing or custom packaging, the MOQ typically starts from <b>500 units</b>.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Do you support OEM/ODM customization?</div>
+                <div class="faq-answer">
+                    <p>Absolutely. As a professional manufacturer, we provide end-to-end customization including:
+                    <ul>
+                        <li>Silk-screen or Laser-etched Logo.</li>
+                        <li>Customized Retail Packaging & Multi-language Manuals.</li>
+                    </ul></p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Can I request samples before placing a bulk order?</div>
+                <div class="faq-answer">
+                    <p>Yes, we encourage sample testing. Samples are usually dispatched within <b>3-5 business days</b> via express courier (DHL/FedEx/UPS) so you can verify the quality firsthand.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">What is the standard lead time for mass production?</div>
+                <div class="faq-answer">
+                    <p><b>Sample/Small orders:</b> 3-7 days.<br>
+                    <b>Bulk orders (under 2,000 units):</b> 15-20 days after payment confirmation.<br>
+                    <b>Custom mold/Large ODM projects:</b> Timeline to be discussed based on complexity.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Do your products come with international certifications?</div>
+                <div class="faq-answer">
+                    <p>Yes. Our main products are fully compliant with <b>CE, FCC, and RoHS</b> standards. We can provide the necessary test reports and certificates to assist with your local customs clearance and market compliance.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">What is your warranty and after-sales policy?</div>
+                <div class="faq-answer">
+                    <p>We provide a <b>12-month quality warranty</b> on all hardware. In the rare event of a manufacturing defect, we offer replacements or credit on your next order to ensure your business remains uninterrupted.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="section-header">
+            <h2>Wholesale Inquiry</h2>
+            <p>Partner with ProsecTech for premium bike security products.</p>
+        </div>
+        <div class="contact-form">
+            <div style="text-align: center; margin-bottom: 30px;">
+                <a href="https://wa.me/8615262691606" target="_blank" class="btn-primary" style="background-color: #25d366; display: inline-flex; align-items: center; gap: 10px;">
+                    <span style="font-size: 20px;">💬</span> Chat on WhatsApp: +86 15262691606
+                </a>
+                <p style="margin-top: 15px; color: #888; font-size: 14px;">— OR SEND US AN EMAIL —</p>
+            </div>
+            <form action="https://formspree.io/f/xvgopwyz" method="POST">
+                <div class="form-group">
+                    <label>Company Name</label>
+                    <input type="text" name="company" placeholder="Your Company" required>
+                </div>
+                <div class="form-group">
+                    <label>Work Email</label>
+                    <input type="email" name="_replyto" placeholder="email@company.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Phone / WhatsApp</label>
+                    <input type="tel" name="phone" placeholder="+ (Country Code) Number">
+                </div>
+                <div class="form-group">
+                    <label>Inquiry Details</label>
+                    <textarea name="message" rows="4" placeholder="Please specify products (GPS Tracker, Alarm, etc.), estimated quantity, and any customization needs..." required></textarea>
+                </div>
+                <input type="hidden" name="_subject" value="New Wholesale Inquiry from ProsecTech Site">
+                <button type="submit" class="btn-primary" style="width: 100%;">Send Wholesale Inquiry</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Detailed Lock Modal -->
+    <div id="lockModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeLock">&times;</span>
+            <div class="modal-body">
+                <img src="https://sc01.alicdn.com/kf/H1a1cd7c10a5242e1a73be28d67ab21a9A.png" alt="Disc Brake Lock Structure & Components">
+                <div class="modal-desc">
+                    <h3>Alloy Disc Brake Lock - Technical Specs</h3>
+                    <p>Professional heavy-duty security designed for motorcycles, e-bikes, and bicycles with disc brakes.</p>
+                    
+                    <div class="spec-group">
+                        <span class="spec-label">Dual Security System</span>
+                        <p>Combines a heavy-duty mechanical lock with a 110dB vibration alarm to effectively deter theft before it happens.</p>
+                    </div>
+
+                    <div class="spec-group">
+                        <span class="spec-label">Rugged & All-Weather</span>
+                        <p>Made of high-strength Aluminum Alloy with an IP65 waterproof rating. Anti-pry, anti-smash, and rust-resistant build.</p>
+                    </div>
+
+                    <div class="spec-group">
+                        <span class="spec-label">Keyless One-Press Locking</span>
+                        <p>Features a convenient keyless locking mechanism—simply press the cylinder to lock the disc brake instantly.</p>
+                    </div>
+
+                    <div class="spec-group">
+                        <span class="spec-label">Compact & Portable</span>
+                        <p>Small and lightweight design for easy storage in pockets or bike bags during rides.</p>
+                    </div>
+
+                    <a href="#contact" class="btn-primary" style="margin-top: 10px;" onclick="closeAllModals()">Bulk Order Inquiry</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Detailed Tail Light Modal -->
+    <div id="tailLightModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeTailLight">&times;</span>
+            <div class="modal-body">
+                <img src="https://sc01.alicdn.com/kf/H1dee6eb703ce469ea57ba423fe72acf3H.png" alt="Smart Brake Tail Light Instructions">
+                <div class="modal-desc">
+                    <h3>Smart Brake Tail Light - Technical Specs</h3>
+                    <p>Advanced safety integration combining high-visibility signaling with anti-theft protection.</p>
+                    
+                    <div class="spec-group">
+                        <span class="spec-label">Key Features</span>
+                        <ul style="color: #ccc; font-size: 14px; margin-top: 10px; padding-left: 20px;">
+                            <li><b>Smart Brake Sensing:</b> Auto-switches to high-brightness upon braking.</li>
+                            <li><b>115dB Anti-Theft Alarm:</b> Vibration-triggered siren with <b>5 selectable ringtones</b>.</li>
+                            <li><b>Long Runtime:</b> Up to 40 hours (Low), 30 hours (Mid), or 16 hours (High).</li>
+                            <li><b>Wireless Remote:</b> Arm, disarm, and search (50-100m range).</li>
+                            <li><b>IP65 Waterproof:</b> Highly resistant to rain and splashes.</li>
+                        </ul>
+                    </div>
+
+                    <div class="spec-group">
+                        <span class="spec-label">Hardware & Technical Specs</span>
+                        <ul style="color: #ccc; font-size: 14px; margin-top: 10px; padding-left: 20px;">
+                            <li><b>Battery:</b> Built-in 800mAh polymer lithium (Type-C, ~3h charge).</li>
+                            <li><b>Construction:</b> Durable ABS+PC, ultra-light at only 46g.</li>
+                            <li><b>Connectivity:</b> 433MHz stable wireless frequency.</li>
+                            <li><b>Certifications:</b> CE and RoHS compliant.</li>
+                        </ul>
+                    </div>
+
+                    <a href="#contact" class="btn-primary" style="margin-top: 10px;" onclick="closeAllModals()">Bulk Order Inquiry</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Detailed Air Pump Modal -->
+    <div id="pumpModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" id="closePump">&times;</span>
+            <div class="modal-body">
+                <img src="https://sc01.alicdn.com/kf/H16f7145789bd4db49a2ca86519c8f354P.png" alt="Mini Air Pump Performance Data">
+                <div class="modal-desc">
+                    <h3>150PSI Mini Air Pump - Technical Specs</h3>
+                    <p>High-performance portable inflator designed for rapid pressure adjustment across all vehicle types.</p>
+                    
+                    <div class="spec-group">
+                        <span class="spec-label">Key Features</span>
+                        <ul style="color: #ccc; font-size: 14px; margin-top: 10px; padding-left: 20px;">
+                            <li><b>Ultra-Compact:</b> Pocket-sized design (80x78x34.5mm) for on-the-go use.</li>
+                            <li><b>Smart Digital Display:</b> Real-time battery and precise tire pressure monitoring.</li>
+                            <li><b>2-in-1 Versatility:</b> Acts as both a high-efficiency inflator and pressure tester.</li>
+                            <li><b>Cordless Operation:</b> Built-in 2400mAh rechargeable battery (3-cell config).</li>
+                            <li><b>Wide Compatibility:</b> Works for cars, motorcycles, bikes, and sports balls.</li>
+                        </ul>
+                    </div>
+
+                    <div class="spec-group">
+                        <span class="spec-label">Hardware & Performance</span>
+                        <ul style="color: #ccc; font-size: 14px; margin-top: 10px; padding-left: 20px;">
+                            <li><b>Pressure Output:</b> Powerful 66.6W motor reaching up to 150 PSI.</li>
+                            <li><b>Efficient Airflow:</b> Steady 15L/min flow for fast inflation.</li>
+                            <li><b>Stable Power:</b> DC 11.1V working voltage for consistent performance.</li>
+                            <li><b>Construction:</b> Upgraded ABS material, lightweight at only ~0.5kg.</li>
+                        </ul>
+                    </div>
+
+                    <a href="#contact" class="btn-primary" style="margin-top: 10px;" onclick="closeAllModals()">Bulk Order Inquiry</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Prosec Technology Co., Ltd. All Rights Reserved.</p>
+        <p style="font-size: 12px; color: #666; margin-top: 10px;">Powered by Accio AI for ProsecTech Independent Site</p>
+    </footer>
+
+    <a href="https://wa.me/8615262691606" class="whatsapp-float" target="_blank" title="Contact us on WhatsApp">
+        <span style="font-size: 30px;">💬</span>
+    </a>
+
+    <script>
+        // Modal Logic
+        const gpsModal = document.getElementById("productModal");
+        const alarmModal = document.getElementById("alarmModal");
+        const lockModal = document.getElementById("lockModal");
+        const tailLightModal = document.getElementById("tailLightModal");
+        const pumpModal = document.getElementById("pumpModal");
+        
+        const gpsBtn = document.getElementById("openDetail");
+        const alarmBtn = document.getElementById("openAlarmDetail");
+        const lockBtn = document.getElementById("openLockDetail");
+        const tailLightBtn = document.getElementById("openTailLightDetail");
+        const pumpBtn = document.getElementById("openPumpDetail");
+        
+        const gpsClose = document.getElementsByClassName("close-modal")[0];
+        const alarmClose = document.getElementById("closeAlarm");
+        const lockClose = document.getElementById("closeLock");
+        const tailLightClose = document.getElementById("closeTailLight");
+        const pumpClose = document.getElementById("closePump");
+
+        // GPS Modal
+        gpsBtn.onclick = function() { gpsModal.style.display = "block"; }
+        gpsClose.onclick = function() { gpsModal.style.display = "none"; }
+        
+        // Alarm Modal
+        alarmBtn.onclick = function() { alarmModal.style.display = "block"; }
+        alarmClose.onclick = function() { alarmModal.style.display = "none"; }
+
+        // Lock Modal
+        lockBtn.onclick = function() { lockModal.style.display = "block"; }
+        lockClose.onclick = function() { lockModal.style.display = "none"; }
+
+        // Tail Light Modal
+        tailLightBtn.onclick = function() { tailLightModal.style.display = "block"; }
+        tailLightClose.onclick = function() { tailLightModal.style.display = "none"; }
+
+        // Pump Modal
+        pumpBtn.onclick = function() { pumpModal.style.display = "block"; }
+        pumpClose.onclick = function() { pumpModal.style.display = "none"; }
+
+        window.onclick = function(event) {
+            if (event.target == gpsModal) { gpsModal.style.display = "none"; }
+            if (event.target == alarmModal) { alarmModal.style.display = "none"; }
+            if (event.target == lockModal) { lockModal.style.display = "none"; }
+            if (event.target == tailLightModal) { tailLightModal.style.display = "none"; }
+            if (event.target == pumpModal) { pumpModal.style.display = "none"; }
+        }
+
+        function closeAllModals() {
+            gpsModal.style.display = "none";
+            alarmModal.style.display = "none";
+            lockModal.style.display = "none";
+            tailLightModal.style.display = "none";
+            pumpModal.style.display = "none";
+        }
+
+        function closeModal() { gpsModal.style.display = "none"; }
+
+        // Simple Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // FAQ Accordion Logic
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
+html>
