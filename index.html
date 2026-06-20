@@ -14,6 +14,12 @@
       gtag('js', new Date());
 
       gtag('config', 'AW-18223695442');
+      
+      // Function to handle form submission conversion
+      function handleFormSubmission() {
+        gtag('event', 'conversion', {'send_to': 'AW-18223695442/G6yjCJDS0MIcENKM3vFD'});
+        return true;
+      }
     </script>
     <style>
         :root {
@@ -1183,7 +1189,7 @@
                 </a>
                 <p style="margin-top: 15px; color: #888; font-size: 14px;">— OR SEND US AN EMAIL —</p>
             </div>
-            <form action="https://formspree.io/f/mdajvwey" method="POST">
+            <form action="https://formspree.io/f/mdajvwey" method="POST" onsubmit="return handleFormSubmission()">
                 <div class="form-group">
                     <label>Company Name</label>
                     <input type="text" name="company" placeholder="Your Company" required>
