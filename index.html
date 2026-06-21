@@ -14,11 +14,33 @@
       gtag('js', new Date());
 
       gtag('config', 'AW-18223695442');
+      // Conversion Linker is enabled by default in gtag config
       
-      // Function to handle form submission conversion
+      // PRIMARY CONVERSION: Form Submission
       function handleFormSubmission() {
-        gtag('event', 'conversion', {'send_to': 'AW-18223695442/G6yjCJDS0MIcENKM3vFD'});
+        gtag('event', 'conversion', {
+          'send_to': 'AW-18223695442/G6yjCJDS0MIcENKM3vFD',
+          'event_callback': function() { console.log('Primary Conversion: Lead Form Sent'); }
+        });
         return true;
+      }
+
+      // SECONDARY CONVERSION: WhatsApp Click
+      function trackWhatsAppClick() {
+        gtag('event', 'click', {
+          'event_category': 'Engagement',
+          'event_label': 'WhatsApp Chat',
+          'value': 1
+        });
+      }
+
+      // SECONDARY CONVERSION: Email Click
+      function trackEmailClick() {
+        gtag('event', 'click', {
+          'event_category': 'Engagement',
+          'event_label': 'Email Inquiry',
+          'value': 1
+        });
       }
     </script>
     <style>
@@ -1234,11 +1256,11 @@
         </div>
         <div class="contact-form">
             <div style="text-align: center; margin-bottom: 30px;">
-                <a href="https://wa.me/8615262691606" target="_blank" class="btn-primary" style="background-color: #25d366; display: inline-flex; align-items: center; gap: 10px;">
+                <a href="https://wa.me/8615262691606" target="_blank" class="btn-primary" style="background-color: #25d366; display: inline-flex; align-items: center; gap: 10px;" onclick="trackWhatsAppClick()">
                     <span style="font-size: 20px;">💬</span> Chat on WhatsApp: +86 15262691606
                 </a>
                 <p style="margin-top: 15px; color: #888; font-size: 14px;">— OR SEND US AN EMAIL —</p>
-                <p style="margin-top: 5px;"><a href="mailto:info@prosetech.com" style="color: var(--primary-color); text-decoration: none; font-weight: bold;">info@prosetech.com</a></p>
+                <p style="margin-top: 5px;"><a href="mailto:info@prosetech.com" style="color: var(--primary-color); text-decoration: none; font-weight: bold;" onclick="trackEmailClick()">info@prosetech.com</a></p>
             </div>
             <form action="https://formspree.io/f/mdajvwey" method="POST" onsubmit="return handleFormSubmission()">
                 <div class="form-group">
@@ -1415,7 +1437,7 @@
         <p style="font-size: 12px; color: #666; margin-top: 10px;">Powered by Accio AI for ProsecTech Independent Site</p>
     </footer>
 
-    <a href="https://wa.me/8615262691606" class="whatsapp-float" target="_blank" title="Contact us on WhatsApp">
+    <a href="https://wa.me/8615262691606" class="whatsapp-float" target="_blank" title="Contact us on WhatsApp" onclick="trackWhatsAppClick()">
         <span style="font-size: 30px;">💬</span>
     </a>
 
