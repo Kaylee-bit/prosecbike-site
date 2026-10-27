@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional Bike GPS Tracker Manufacturer. OEM/ODM Dual Ecosystem Smart Tag for Apple Find My & Android. Wholesale pricing, 18 years experience.">
-    <meta name="keywords" content="Wholesale Bike GPS Tracker, Bicycle Tracker Manufacturer, Apple Find My Bike Tracker Factory, B2B Smart Tag Supplier">
-    <title>Bike GPS Tracker Manufacturer | Prosec Technology - Wholesale & OEM/ODM</title>
+    <meta name="description" content="Bike Bluetooth Finder Tags for wholesale and OEM/ODM inquiries. Confirm Apple Find My or Android Find Hub compatibility for your selected model.">
+    <meta name="keywords" content="Wholesale Bike Bluetooth Finder Tag, Bicycle Tracker Manufacturer, Apple Find My Bike Tracker Factory, B2B Smart Tag Supplier">
+    <title>Bike Bluetooth Finder Tag Manufacturer | Prosec Technology - Wholesale & OEM/ODM</title>
     
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18223695442"></script>
@@ -21,9 +21,53 @@
           y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
       })(window, document, "clarity", "script", "xaev9gb6g0");
 
-      function handleFormSubmission() {
-        gtag('event', 'conversion', { 'send_to': 'AW-18223695442/G6yjCJDS0MIcENKM3vFD' });
-        return true;
+      async function handleFormSubmission(event) {
+        event.preventDefault();
+        const form = event.currentTarget;
+        if (form.dataset.state === 'pending' || form.dataset.state === 'success') return;
+        if (!form.reportValidity()) return;
+
+        const button = form.querySelector('button[type="submit"]');
+        const status = document.getElementById('inquiry-status');
+        form.dataset.state = 'pending';
+        form.setAttribute('aria-busy', 'true');
+        button.disabled = true;
+        button.textContent = 'Sending…';
+        status.textContent = 'Sending your inquiry…';
+        const controller = new AbortController();
+        const timeout = setTimeout(() => controller.abort(), 20000);
+        let accepted = false;
+        try {
+          const response = await fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: { 'Accept': 'application/json' },
+            signal: controller.signal
+          });
+          const result = await response.json();
+          if (!response.ok || result.ok !== true) throw new Error('Submission not confirmed');
+          accepted = true;
+        } catch (error) {
+          form.dataset.state = 'error';
+          status.textContent = 'We could not confirm your submission. Your details are still here. Please check your connection and try again, or contact info@prosetech.com. If the request timed out, it may have reached us; contact us before retrying to avoid a duplicate.';
+        } finally {
+          clearTimeout(timeout);
+          form.setAttribute('aria-busy', 'false');
+          button.disabled = accepted;
+          button.textContent = accepted ? 'Inquiry Sent' : 'Try Again';
+        }
+        if (!accepted) return;
+        // Lock before tracking. Analytics failure must never invite a duplicate inquiry.
+        form.dataset.state = 'success';
+        status.textContent = 'Your inquiry was submitted successfully. Thank you! For additional details, contact info@prosetech.com.';
+        form.reset();
+        try {
+          if (typeof gtag === 'function') {
+            gtag('event', 'conversion', { 'send_to': 'AW-18223695442/G6yjCJDS0MIcENKM3vFD' });
+          }
+        } catch (error) {
+          // Formspree acceptance remains successful even if analytics is unavailable.
+        }
       }
     </script>
 
@@ -48,6 +92,7 @@
         .hero-text p { font-size: 1.2rem; margin-bottom: 30px; }
 
         .btn-primary { background: var(--primary-color); color: #000; padding: 15px 40px; border-radius: 5px; font-weight: bold; text-decoration: none; display: inline-block; transition: 0.3s; }
+        button:disabled { opacity: 0.65; cursor: not-allowed; }
         .btn-primary:hover { transform: scale(1.05); background: #ffe066; }
 
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-top: 40px; }
@@ -84,8 +129,8 @@
     <!-- 1. Hero -->
     <section class="hero">
         <div class="hero-text">
-            <h1>Bike GPS Tracker Manufacturer</h1>
-            <p>High-Precision Security Solutions for Brands & Wholesalers Worldwide.</p>
+            <h1>Bike Bluetooth Finder Tag Manufacturer</h1>
+            <p>BLE Item-Finding Solutions for Bike Brands & Wholesalers.</p>
             <a href="#inquiry" class="btn-primary">Get Wholesale Quote</a>
         </div>
     </section>
@@ -94,15 +139,15 @@
     <section class="section" style="background: var(--secondary-color);">
         <div style="display: flex; flex-wrap: wrap; gap: 50px; align-items: center;">
             <div style="flex: 1; min-width: 300px;">
-                <img src="https://sc01.alicdn.com/kf/Hca41bcd8bf674271b8eb6952c9596a1dE.png" alt="Prosec GPS Tracker" style="width: 100%; border-radius: 15px;">
+                <img src="https://sc01.alicdn.com/kf/Hca41bcd8bf674271b8eb6952c9596a1dE.png" alt="Prosec bike Bluetooth finder tag" style="width: 100%; border-radius: 15px;">
             </div>
             <div style="flex: 1; min-width: 300px;">
-                <h2 style="color: var(--primary-color); font-size: 2.5rem; margin-bottom: 20px;">Why Choose Our GPS Tracker?</h2>
+                <h2 style="color: var(--primary-color); font-size: 2.5rem; margin-bottom: 20px;">Explore Our Bike Finder Tag</h2>
                 <ul style="list-style: none;">
-                    <li style="margin-bottom: 15px;"><span style="color: var(--accent-color);">✔</span> <b>Dual Ecosystem:</b> Works with Apple Find My & Android Find Hub.</li>
-                    <li style="margin-bottom: 15px;"><span style="color: var(--accent-color);">✔</span> <b>Zero Subscriptions:</b> No SIM card, no monthly fees forever.</li>
-                    <li style="margin-bottom: 15px;"><span style="color: var(--accent-color);">✔</span> <b>Industry-Leading Battery:</b> Replaceable cell lasts up to 24 months.</li>
-                    <li style="margin-bottom: 15px;"><span style="color: var(--accent-color);">✔</span> <b>Global Precision:</b> Pinpoint location anywhere on Earth.</li>
+                    <li style="margin-bottom: 15px;"><span style="color: var(--accent-color);">✔</span> <b>Network Options:</b> Ask us to confirm Apple Find My or Android Find Hub support for your selected model.</li>
+                    <li style="margin-bottom: 15px;"><span style="color: var(--accent-color);">✔</span> <b>BLE Connectivity:</b> Uses Bluetooth-based item finding. Confirm network requirements and any service costs before ordering.</li>
+                    <li style="margin-bottom: 15px;"><span style="color: var(--accent-color);">✔</span> <b>Battery Details:</b> Ask for the confirmed battery type and tested runtime for your configuration.</li>
+                    <li style="margin-bottom: 15px;"><span style="color: var(--accent-color);">✔</span> <b>Network-Assisted Finding:</b> Location availability depends on nearby participating devices; coverage and update timing vary.</li>
                 </ul>
             </div>
         </div>
@@ -110,23 +155,23 @@
 
     <!-- 3. Features -->
     <section class="section">
-        <h2 style="text-align: center; margin-bottom: 40px;">Advanced Protection Features</h2>
+        <h2 style="text-align: center; margin-bottom: 40px;">How Network-Assisted Finding Works</h2>
         <div class="grid">
             <div class="card">
-                <h3>Global Tracking</h3>
-                <p>Leverages billions of Apple & Android devices to locate your bike even in remote areas.</p>
+                <h3>Bluetooth Network Finding</h3>
+                <p>Compatible BLE tags can be detected by nearby devices in their supported finding network. Remote or low-traffic areas may have limited or no location updates.</p>
             </div>
             <div class="card">
-                <h3>Anti-Theft Alerts</h3>
-                <p>Receive instant notifications on your phone if your bike moves unexpectedly.</p>
+                <h3>Notification Availability</h3>
+                <p>Notification features depend on the selected model, phone, app and settings. Instant movement or theft alerts are not promised; request a demonstration of the exact feature you need.</p>
             </div>
             <div class="card">
-                <h3>Smart App Integration</h3>
-                <p>Native integration with "Find My" app. No extra app installation required for iOS users.</p>
+                <h3>App Compatibility</h3>
+                <p>Confirm the supported app, phone requirements and pairing process for the supplied model. Support for both ecosystems at the same time has not been verified.</p>
             </div>
             <div class="card">
-                <h3>IP65 Waterproof</h3>
-                <p>Fully sealed housing ensures reliable tracking in heavy rain and mud.</p>
+                <h3>Outdoor Use Requirements</h3>
+                <p>Ask for the model-specific ingress protection test report and installation guidance before specifying outdoor use. Water resistance does not mean waterproof.</p>
             </div>
         </div>
     </section>
@@ -134,13 +179,14 @@
     <!-- 4. Specifications -->
     <section class="section" style="background: #151515;">
         <h2 style="text-align: center;">Technical Specifications</h2>
+        <p>Preliminary specifications from the product listing; confirm the exact model, revision and supporting documentation before ordering. This BLE listing does not establish standalone GPS/GNSS or cellular tracking capability.</p>
         <table class="specs-table">
-            <tr><td>Dimensions</td><td>39 mm (Diameter) × 16 mm (H)</td></tr>
-            <tr><td>Network</td><td>Apple Find My / Android Find Hub (BLE)</td></tr>
-            <tr><td>Battery Life</td><td>Up to 24 Months (Replaceable CR2032)</td></tr>
-            <tr><td>Connectivity</td><td>Bluetooth 5.2 / BLE</td></tr>
-            <tr><td>Protection</td><td>IP65 Dust & Water Resistant</td></tr>
-            <tr><td>Operating Temp</td><td>-20°C to +60°C</td></tr>
+            <tr><td>Dimensions</td><td>Listed: 39 mm (Diameter) × 16 mm (H); confirm against model drawing</td></tr>
+            <tr><td>Network</td><td>BLE finding network; Apple Find My / Android Find Hub compatibility to be confirmed per model</td></tr>
+            <tr><td>Battery Life</td><td>Listed: up to 24 months / replaceable CR2032; battery type and runtime test conditions to be confirmed</td></tr>
+            <tr><td>Connectivity</td><td>BLE; listed Bluetooth 5.2 version to be confirmed</td></tr>
+            <tr><td>Protection</td><td>Listed: IP65; model-specific test report to be confirmed</td></tr>
+            <tr><td>Operating Temp</td><td>Listed: -20°C to +60°C; validation to be confirmed</td></tr>
         </table>
     </section>
 
@@ -150,15 +196,15 @@
         <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
             <div style="text-align: center;">
                 <h4 style="color: var(--primary-color);">Bike Brands</h4>
-                <p>Enhance your bikes with built-in security features.</p>
+                <p>Explore bike item-finding options for your product range.</p>
             </div>
             <div style="text-align: center;">
                 <h4 style="color: var(--primary-color);">Distributors</h4>
-                <p>Reliable stock and local market compliance support.</p>
+                <p>Discuss availability and documentation for your target market.</p>
             </div>
             <div style="text-align: center;">
                 <h4 style="color: var(--primary-color);">E-Bike Companies</h4>
-                <p>Integrated tracking for high-value electric vehicles.</p>
+                <p>Evaluate BLE item finding for your e-bike accessories range.</p>
             </div>
             <div style="text-align: center;">
                 <h4 style="color: var(--primary-color);">Wholesalers</h4>
@@ -207,14 +253,14 @@
 
     <!-- 8. Factory & Quality -->
     <section class="section" style="background: #151515;">
-        <h2 style="text-align: center; margin-bottom: 40px;">Global Certification & QC</h2>
+        <h2 style="text-align: center; margin-bottom: 40px;">Compliance Documentation for Your Market</h2>
         <div style="display: flex; gap: 30px; justify-content: center; flex-wrap: wrap;">
-            <div style="border: 1px solid var(--primary-color); padding: 10px 30px; border-radius: 5px;">CE Certified</div>
-            <div style="border: 1px solid var(--primary-color); padding: 10px 30px; border-radius: 5px;">FCC Compliant</div>
-            <div style="border: 1px solid var(--primary-color); padding: 10px 30px; border-radius: 5px;">RoHS Approved</div>
+            <div style="border: 1px solid var(--primary-color); padding: 10px 30px; border-radius: 5px;">CE documentation: confirm per model</div>
+            <div style="border: 1px solid var(--primary-color); padding: 10px 30px; border-radius: 5px;">FCC documentation: confirm per model</div>
+            <div style="border: 1px solid var(--primary-color); padding: 10px 30px; border-radius: 5px;">RoHS documentation: confirm per model</div>
         </div>
         <div style="margin-top: 50px; text-align: center;">
-            <p>Our 2008-founded Shenzhen facility operates under ISO standards with advanced precise QC lines for raw material inspection and final stress testing.</p>
+            <p>Before ordering, request applicable declarations, test reports and any factory quality-system certificate. Check the model, issuing body, scope and validity; no model-specific certification or ISO certification is asserted here.</p>
         </div>
     </section>
 
@@ -224,11 +270,11 @@
         <div style="max-width: 800px; margin: 0 auto;">
             <div class="faq-item">
                 <h4>Does this require a monthly fee?</h4>
-                <p>No. Our tracker uses the global Apple/Android find networks, meaning no SIM card is needed and there are zero monthly subscription costs.</p>
+                <p>BLE finding tags rely on compatible phones and a supported finding network rather than a cellular connection on the tag. Confirm the supplied model, app requirements and applicable service terms; no lifetime fee guarantee is made.</p>
             </div>
             <div class="faq-item">
                 <h4>Is it compatible with Android?</h4>
-                <p>Yes. This specific model is a dual-system device that works seamlessly with both iOS "Find My" and the Android "Find Hub" ecosystem.</p>
+                <p>Please confirm Android Find Hub support for the exact model and firmware before ordering. Apple Find My support, switching between networks and simultaneous pairing must be verified separately.</p>
             </div>
             <div class="faq-item">
                 <h4>Can I print my own brand logo?</h4>
@@ -242,21 +288,23 @@
         <h2 style="text-align: center; color: var(--primary-color); margin-bottom: 20px;">Request Wholesale Quote</h2>
         <p style="text-align: center; margin-bottom: 40px;">Direct Factory Support for Global Wholesalers and Distributors.</p>
         <div class="form-container">
-            <form action="https://formspree.io/f/mdajvwey" method="POST" onsubmit="return handleFormSubmission()">
-                <input type="hidden" name="_subject" value="GPS Tracker Ad Landing Page Inquiry">
+            <form action="https://formspree.io/f/mdajvwey" method="POST" onsubmit="handleFormSubmission(event)" aria-describedby="inquiry-status">
+                <input type="hidden" name="_subject" value="Bike Finder Tag Ad Landing Page Inquiry">
                 <div class="form-group">
-                    <label>Company Name</label>
-                    <input type="text" name="company" placeholder="Your Company" required>
+                    <label for="inquiry-company">Company Name</label>
+                    <input type="text" id="inquiry-company" name="company" placeholder="Your Company" required>
                 </div>
                 <div class="form-group">
-                    <label>Work Email</label>
-                    <input type="email" name="_replyto" placeholder="email@company.com" required>
+                    <label for="inquiry-email">Work Email</label>
+                    <input type="email" id="inquiry-email" name="_replyto" placeholder="email@company.com" required>
                 </div>
                 <div class="form-group">
-                    <label>Inquiry Details</label>
-                    <textarea name="message" rows="5" placeholder="Please specify estimated quantity and customization needs..." required></textarea>
+                    <label for="inquiry-message">Inquiry Details</label>
+                    <textarea id="inquiry-message" name="message" rows="5" placeholder="Please specify estimated quantity and customization needs..." required></textarea>
                 </div>
                 <button type="submit" class="btn-primary" style="width: 100%;">Submit Inquiry</button>
+                <p id="inquiry-status" role="status" aria-live="polite" aria-atomic="true" style="margin-top: 16px;"></p>
+                <noscript><p>JavaScript is disabled. Formspree will display the submission result after you submit.</p></noscript>
             </form>
         </div>
     </section>
